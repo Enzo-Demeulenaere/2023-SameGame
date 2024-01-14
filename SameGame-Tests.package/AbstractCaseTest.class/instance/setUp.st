@@ -1,5 +1,5 @@
 running
 setUp
-	
+
 	super setUp.
-	abstractCase := AbstractCase new position:(5,4).
+	abstractCase := AbstractCase new position: 5 @ 4

@@ -1,3 +1,4 @@
 initialization
-drawYellowCasex:x y:y
-		(grid at: x @ y) drawYellowCase
+drawYellowCasex: x y: y
+
+	(grid at: x @ y) drawYellowCase

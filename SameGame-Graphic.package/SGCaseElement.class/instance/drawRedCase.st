@@ -1,3 +1,4 @@
 initialization
 drawRedCase
-		self background: Color lightRed.
+
+	self background: Color lightRed

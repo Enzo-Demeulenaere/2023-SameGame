@@ -1,3 +1,4 @@
 accessing
-hitBlue 
+hitBlue
+
 	^ self

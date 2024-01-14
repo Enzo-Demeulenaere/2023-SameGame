@@ -1,3 +1,4 @@
-as yet unclassified
+clicking
 clickOn: aPosition
-	sameGameBoard hitCaseOnx:  (aPosition x)y: (aPosition y)
+
+	sameGameBoard hitCaseOnx: aPosition x y: aPosition y

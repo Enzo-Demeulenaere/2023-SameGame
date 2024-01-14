@@ -1,3 +1,4 @@
 accessing
-isNullCase 
+isNullCase
+
 	^ false

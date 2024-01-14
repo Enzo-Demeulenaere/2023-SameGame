@@ -1,3 +1,4 @@
 accessing
 gridPosition
+
 	^ gridPosition

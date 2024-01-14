@@ -1,6 +1,7 @@
-as yet unclassified
+initialization
 initialize
-	super initialize .
+
+	super initialize.
 	hitList := OrderedCollection new.
-	stackHit := Stack new.
+	stackHit := Stack new
 	"stock les cases touchées"

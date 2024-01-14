@@ -1,3 +1,4 @@
-as yet unclassified
+hit
 draw: drawer
-	drawer drawBlueCasex: (self x) y: (self y)
+
+	drawer drawBlueCasex: self x y: self y

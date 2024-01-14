@@ -1,3 +1,4 @@
 accessing
 isRedCase
+
 	^ false

@@ -1,4 +1,4 @@
-as yet unclassified
+accessing
 game: aGame
 
-	game := aGame. 
+	game := aGame

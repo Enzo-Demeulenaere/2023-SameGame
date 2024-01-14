@@ -1,5 +1,4 @@
-as yet unclassified
+compute
 calculePoint
-
 
 	^ hitList size * hitList size

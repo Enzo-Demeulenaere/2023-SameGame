@@ -1,3 +1,4 @@
 accessing
 sameGameBoard: aSameGameBoard
- sameGameBoard := aSameGameBoard
+
+	sameGameBoard := aSameGameBoard

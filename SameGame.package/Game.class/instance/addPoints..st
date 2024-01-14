@@ -1,4 +1,4 @@
 accessing
 addPoints: numberOfPoints
 
-	points := points + numberOfPoints .
+	points := points + numberOfPoints

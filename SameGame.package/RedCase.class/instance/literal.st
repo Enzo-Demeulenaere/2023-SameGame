@@ -1,0 +1,4 @@
+hit
+literal
+
+	^ 'R'

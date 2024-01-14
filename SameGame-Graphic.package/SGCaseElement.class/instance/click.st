@@ -1,3 +1,4 @@
 public
 click
-	board clickOn: gridPosition.
+
+	board clickOn: gridPosition

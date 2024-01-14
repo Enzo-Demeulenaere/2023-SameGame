@@ -1,3 +1,4 @@
-as yet unclassified
+hit
 hitYellow
-	 board nullCaseOnx: self x y: self y
+
+	board nullCaseOnx: self x y: self y
