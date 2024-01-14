@@ -1,30 +1,28 @@
 # SameGame
 Implementation du jeu SameGame par Wattebled Thomas, De Sainte Maresville Maxime, Javad.
 
-# Installation du jeu 
+# Installing the game in P11
 
-## Installer les packages
-
-Il Faut tout d'abord installer Bloc et Myg avec le code ci-dessous :
-
-``` smalltalk 
+```
+Author fullName: 'No'.
 Metacello new
-    baseline: 'Bloc';
-    repository: 'github://pharo-graphics/Bloc:05e5b0e385811719537f8cd89966b150a07be985/src';
-    onConflictUseIncoming;
-    load;
-    lock.
+	repository: 'github://Ducasse/Myg:v1.0.1/src';
+	baseline: 'Myg';
+	onConflictUseLoaded;
+	load.
+```
 
+```
 Metacello new
-    repository: 'github://Ducasse/Myg:v1.0.0';
-    baseline: 'Myg';
-    onConflictUseIncoming;
+    baseline: 'SameGame';
+    repository: 'github://Ducasse/2023-SameGame:main/src';
+    onConflictUseLoaded;
     load.
 ```
 
-Il faut ensuite à partir de git repository browser remplir le Owner Name "thomasWattebled" et le Project name "SameGame".
-
-![Alt text](image.png).
+```
+SameGameGraphic open
+```
 
 ## Jouer au jeu
 
