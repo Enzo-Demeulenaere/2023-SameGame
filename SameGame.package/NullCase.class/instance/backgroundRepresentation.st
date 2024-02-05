@@ -1,0 +1,4 @@
+accessing
+backgroundRepresentation
+
+	^ Color darkGray

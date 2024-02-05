@@ -1,6 +1,6 @@
 {
 	"commentStamp" : "",
-	"super" : "AbstractCase",
+	"super" : "NullCase",
 	"category" : "SameGame-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],

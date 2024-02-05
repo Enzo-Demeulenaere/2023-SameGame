@@ -1,4 +1,0 @@
-drawing - general
-draw: drawer
-
-	
