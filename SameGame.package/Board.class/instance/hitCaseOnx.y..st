@@ -1,13 +1,14 @@
 hit
 hitCaseOnx: x y: y
 
-	hitList add: (self grid at: x @ y).
-	(grid at: x @ y) hit.
-	hitList size > 1 ifTrue: [ self nullCaseOnx: x y: y ].
+	(self grid at: x @ y) isNullCase ifTrue: [ ^ self ].
+	(self grid at: x @ y) propagateClick.
+	self hitList size > 1 ifTrue: [
+		self hitList do: [ :each | self nullCaseOnx: each x y: each y ] ].
 
 	self game addPoints: self calculePoint.
 
-	hitList removeAll.
+	self hitList removeAll.
 
 
 	"cpt := 1.
