@@ -1,5 +1,5 @@
 reorganize
-regenerateGridX: x y: y
+generateGridX: x y: y
 
 	| array2D |
 	array2D := CTNewArray2D

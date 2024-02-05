@@ -2,10 +2,9 @@ instance creation
 open
 
 	<script>
-	| board game graphicBoard space |
-	game := Game new.
-	board := Board new game: game.
-	board regenerateGridX: 20 y: 20.
+	| board graphicBoard space |
+	board := Board new game: Game new.
+	board generateGridX: 20 y: 20.
 	graphicBoard := SGBoardElement new.
 	graphicBoard grid: board grid.
 	graphicBoard sameGameBoard: board.
