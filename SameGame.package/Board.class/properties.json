@@ -1,14 +1,13 @@
 {
 	"commentStamp" : "",
 	"super" : "MygBoard",
-	"category" : "SameGame",
+	"category" : "SameGame-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [
 		"game",
 		"hitList",
-		"stackHit",
 		"drawer"
 	],
 	"name" : "Board",

@@ -13,6 +13,7 @@ grid: aSameGameBoardGrid
 		1 to: aSameGameBoardGrid height do: [ :row |
 			| sgCaseElement |
 			sgCaseElement := SGCaseElement new.
+			"don't ask tell once again"
 			(aSameGameBoardGrid at: row @ col) isYellowCase ifTrue: [
 				sgCaseElement drawYellowCase ].
 			(aSameGameBoardGrid at: row @ col) isGreenCase ifTrue: [
