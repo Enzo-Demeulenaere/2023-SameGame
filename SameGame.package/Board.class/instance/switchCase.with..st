@@ -1,5 +1,5 @@
 compute
-exchangeCase: aPoint1 at: aPoint2
+switchCase: aPoint1 with: aPoint2
 
 	| case |
 	case := self grid at: aPoint1.

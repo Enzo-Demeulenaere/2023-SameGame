@@ -1,7 +1,7 @@
 tests
 testExchangeColonne
 
-	| board game graphicBoard | 
+	| board game graphicBoard |
 	game := Game new.
 	board := Board new game: game.
 	board configureGrid: ((CTNewArray2D width: 3 height: 3)
@@ -22,11 +22,11 @@ testExchangeColonne
 
 	board drawer: graphicBoard.
 
-	board exchangeCollone1: 1 colonne2: 2.
-	self assert: (board findCaseX: 1 y: 1) literal equals: 'Y'.
-	self assert: (board findCaseX: 1 y: 2) literal equals: 'R'.
-	self assert: (board findCaseX: 1 y: 3) literal equals: 'G'.
+	board switchColumn: 1 withColumn: 2.
+	self assert: (board caseAt: 1 @ 1) literal equals: 'Y'.
+	self assert: (board caseAt: 1 @ 2) literal equals: 'R'.
+	self assert: (board caseAt: 1 @ 3) literal equals: 'G'.
 
-	self assert: (board findCaseX: 2 y: 1) literal equals: 'N'.
-	self assert: (board findCaseX: 2 y: 2) literal equals: 'N'.
-	self assert: (board findCaseX: 2 y: 3) literal equals: 'N'
+	self assert: (board caseAt: 2 @ 1) literal equals: 'N'.
+	self assert: (board caseAt: 2 @ 2) literal equals: 'N'.
+	self assert: (board caseAt: 2 @ 3) literal equals: 'N'

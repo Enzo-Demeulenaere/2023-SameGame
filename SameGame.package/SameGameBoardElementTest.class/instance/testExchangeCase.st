@@ -2,7 +2,7 @@ tests
 testExchangeCase
 
 	| board case1 case2 game graphicBoard |
-	game := Game new. 
+	game := Game new.
 	board := Board new game: game.
 	board configureGrid: ((CTNewArray2D width: 3 height: 3)
 			 at: 1 @ 1 put: NullCase new;
@@ -21,15 +21,15 @@ testExchangeCase
 	graphicBoard sameGameBoard: board.
 
 	board drawer: graphicBoard.
-	case1 := board findCaseX: 1 y: 1.
-	case2 := board findCaseX: 2 y: 1.
+	case1 := board caseAt: 1 @ 1.
+	case2 := board caseAt: 2 @ 1.
 	self assert: case1 literal equals: 'N'.
 	self assert: case2 literal equals: 'Y'.
 
-	board exchangeCase: 1 @ 1 at: 2 @ 1.
+	board switchCase: 1 @ 1 with: 2 @ 1.
 
-	case1 := board findCaseX: 1 y: 1.
-	case2 := board findCaseX: 2 y: 1.
+	case1 := board caseAt: 1 @ 1.
+	case2 := board caseAt: 2 @ 1.
 
 	self assert: case1 literal equals: 'Y'.
 	self assert: case2 literal equals: 'N'

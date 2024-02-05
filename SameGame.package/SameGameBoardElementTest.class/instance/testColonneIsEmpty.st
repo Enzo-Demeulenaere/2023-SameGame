@@ -20,5 +20,5 @@ testColonneIsEmpty
 	graphicBoard sameGameBoard: board.
 
 	board drawer: graphicBoard.
-	self assert: (board colonneEmptyOnX: 1).
-	self deny: (board colonneEmptyOnX: 2)
+	self assert: (board isColumnEmpty: 1).
+	self deny: (board isColumnEmpty: 2)

@@ -1,4 +1,4 @@
 accessing
-drawer: aDrawer
+drawer: aSGBoardElement
 
-	drawer := aDrawer
+	drawer := aSGBoardElement

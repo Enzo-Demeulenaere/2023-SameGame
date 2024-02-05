@@ -1,4 +1,4 @@
 public
 click
 
-	board clickOn: gridPosition
+	self board clickOn: self gridPosition
