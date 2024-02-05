@@ -1,5 +1,5 @@
 accessing
-nullCaseOnx: x y: y
+nullCaseOnx: x y: y 
 
 	self grid atColumn: x atRow: y put: (NullCase new position: x @ y)
 

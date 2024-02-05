@@ -12,16 +12,7 @@ grid: aSameGameBoardGrid
 			| sgCaseElement |
 			sgCaseElement := SGCaseElement new.
 			"don't ask tell once again"
-			(aSameGameBoardGrid at: row @ col) isNullCase ifTrue: [
-				sgCaseElement drawNullCase ].
-			(aSameGameBoardGrid at: row @ col) isYellowCase ifTrue: [
-				sgCaseElement drawYellowCase ].
-			(aSameGameBoardGrid at: row @ col) isGreenCase ifTrue: [
-				sgCaseElement drawGreenCase ].
-			(aSameGameBoardGrid at: row @ col) isRedCase ifTrue: [
-				sgCaseElement drawRedCase ].
-			(aSameGameBoardGrid at: row @ col) isBlueCase ifTrue: [
-				sgCaseElement drawBlueCase ].
+			sgCaseElement background: (aSameGameBoardGrid at: row @ col) backgroundRepresentation.
 			sgCaseElement gridPosition: row @ col.
 			sgCaseElement board: self.
 			grid at: row @ col put: sgCaseElement.

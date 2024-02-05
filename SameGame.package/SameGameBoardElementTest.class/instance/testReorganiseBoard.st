@@ -1,9 +1,9 @@
 tests
-testReorganiseBoard
+testReorganiseBoard 
 
 	| firstBoard game graphicBoard |
 	self skip. "this was not working. See that later."
-"| B |            | B |
+	"| B |            | B |
  | N |            | Y |
  | Y |         => | B |
  | N |            | N |

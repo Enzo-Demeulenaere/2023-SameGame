@@ -18,7 +18,7 @@ hitCaseOnx: x y: y
 	1 to: self grid width do: [ :i | self reorganizeOnx: i y: 1 ].
 
 	self reorganizeForEmptyColonne.
-
+	"draw again the whole grid"
 	1 to: self grid width do: [ :col |
 		1 to: self grid height do: [ :row |
 		(self grid at: col @ row) draw: drawer ] ].

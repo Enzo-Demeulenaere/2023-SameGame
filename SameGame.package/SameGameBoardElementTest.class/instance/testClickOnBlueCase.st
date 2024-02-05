@@ -2,19 +2,15 @@ tests
 testClickOnBlueCase
 
 	| board resGrid game graphicBoard resgraphicBoard |
-	"| B B  |			   | G R |
+	"| B B  |			   | G R | 
  | G R  |     =>  | N N |"
 	game := Game new.
 	board := Board new game: game.
 	board configureGrid: ((CTNewArray2D width: 2 height: 2)
-			 at: 1 @ 1 put: (BlueCase new
-					);
-			 at: 2 @ 1 put: (BlueCase new
-				 );
-			 at: 1 @ 2 put: (GreenCase new
-				 );
-			 at: 2 @ 2 put: (RedCase new
-				  );
+			 at: 1 @ 1 put: BlueCase new;
+			 at: 2 @ 1 put: BlueCase new;
+			 at: 1 @ 2 put: GreenCase new;
+			 at: 2 @ 2 put: RedCase new;
 			 yourself).
 
 	graphicBoard := SGBoardElement new.
@@ -24,15 +20,10 @@ testClickOnBlueCase
 
 	resGrid := Board new.
 	resGrid configureGrid: ((CTNewArray2D width: 2 height: 2)
-			 at: 1 @ 1 put: (GreenCase new
-					  );
-			 at: 2 @ 1 put: (RedCase new
-				  
-				  );
-			 at: 1 @ 2 put: (NullCase new
-				  );
-			 at: 2 @ 2 put: (NullCase new
-				  );
+			 at: 1 @ 1 put: GreenCase new;
+			 at: 2 @ 1 put: RedCase new;
+			 at: 1 @ 2 put: NullCase new;
+			 at: 2 @ 2 put: NullCase new;
 			 yourself).
 
 	resgraphicBoard := SGBoardElement new.
