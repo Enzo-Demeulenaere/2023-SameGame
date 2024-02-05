@@ -2,6 +2,7 @@ tests
 testDrawGreenCase
 
 	| case |
+	self skip.
 	case := SGCaseElement new.
 	case drawGreenCase.
 

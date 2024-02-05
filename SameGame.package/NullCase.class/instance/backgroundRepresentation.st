@@ -1,4 +1,4 @@
 accessing
 backgroundRepresentation
 
-	^ Color darkGray
+	^ Color gray

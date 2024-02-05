@@ -1,4 +1,6 @@
-drawing - general
-draw: drawer
+as yet unclassified
+draw: drawer 
 
-	drawer drawNullCasex: self x y: self y
+	(drawer grid at: self x @ self y) background: self backgroundRepresentation 
+	
+	

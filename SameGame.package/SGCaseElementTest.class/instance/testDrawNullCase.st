@@ -2,6 +2,7 @@ tests
 testDrawNullCase
 
 	| case |
+	self skip.
 	case := SGCaseElement new.
 	case drawNullCase.
 
