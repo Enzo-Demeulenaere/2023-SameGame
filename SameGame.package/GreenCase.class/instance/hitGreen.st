@@ -1,4 +1,4 @@
 hit
 hitGreen
 
-	board nullCaseOnx: self x y: self y
+	self board nullCaseOnx: self x y: self y

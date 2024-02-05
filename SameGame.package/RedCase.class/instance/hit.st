@@ -1,4 +1,4 @@
 hit
 hit
 
-	board hitRedCaseonx: self x y: self y
+	self board hitRedCaseonx: self x y: self y
