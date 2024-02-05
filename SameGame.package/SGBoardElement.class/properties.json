@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "BlElement",
+	"category" : "SameGame-UI",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"grid",
+		"sameGameBoard"
+	],
+	"name" : "SGBoardElement",
+	"type" : "normal"
+}
