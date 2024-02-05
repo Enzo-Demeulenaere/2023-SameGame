@@ -1,4 +1,4 @@
 initialization
 drawRedCasex: x y: y
 
-	(grid at: x @ y) drawRedCase
+	(self grid at: x @ y) drawRedCase

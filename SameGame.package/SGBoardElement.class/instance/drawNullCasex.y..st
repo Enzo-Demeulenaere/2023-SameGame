@@ -1,4 +1,4 @@
 initialization
 drawNullCasex: x y: y
 
-	(grid at: x @ y) drawNullCase
+	(self grid at: x @ y) drawNullCase

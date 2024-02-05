@@ -8,4 +8,4 @@ initialize
 		aLayoutConstraints horizontal matchParent.
 		aLayoutConstraints vertical matchParent ].
 
-	self addEventHandlerOn: BlMouseUpEvent do: [ :anEvent | self click ]
+	self addEventHandlerOn: BlClickEvent do: [ :anEvent | self click ]

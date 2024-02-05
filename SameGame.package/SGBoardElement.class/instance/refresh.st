@@ -1,5 +1,6 @@
 accessing
 refresh
+	"i don't like this way of doing it"
 
 	self hasChildren ifTrue: [ self removeChildren ].
-	grid do: [ :aCase | self addChild: aCase ]
+	self grid do: [ :aCase | self addChild: aCase ]

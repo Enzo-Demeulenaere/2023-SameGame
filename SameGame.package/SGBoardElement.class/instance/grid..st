@@ -6,8 +6,7 @@ grid: aSameGameBoardGrid
 		        height: aSameGameBoardGrid height.
 
 	self
-		setLayoutWidth: aSameGameBoardGrid width
-		height: aSameGameBoardGrid height.
+		setGridLayout: aSameGameBoardGrid width.
 
 	1 to: aSameGameBoardGrid width do: [ :col |
 		1 to: aSameGameBoardGrid height do: [ :row |
