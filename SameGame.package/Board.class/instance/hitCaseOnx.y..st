@@ -8,9 +8,9 @@ hitCaseOnx: x y: y
 
 	self game addPoints: self calculePoint.
 
-	self hitList removeAll.
+	self hitList do: [ :each | self reorganizeColumn: each x ].
 
-	1 to: self grid width do: [ :i | self reorganizeOnx: i y: 1 ].
+	self hitList removeAll.
 
 	self reorganizeForEmptyColumn.
 	"draw again the whole grid"
