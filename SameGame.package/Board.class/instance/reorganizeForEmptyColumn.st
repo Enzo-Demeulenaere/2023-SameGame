@@ -1,10 +1,10 @@
 reorganize
 reorganizeForEmptyColumn
-	"doesn't work exactly"
-	"writing a test can show the error"
 
+	| cpt |
+	cpt := 0.
 	1 to: self grid width do: [ :i |
-		(self isColumnEmpty: i) ifTrue: [
-			i + 1 to: self grid width do: [ :j |
-				(self caseAt: j @ 1) isNullCase ifFalse: [
-					self switchColumn: i withColumn: j ] ] ] ]
+		(self isColumnEmpty: i - cpt) ifTrue: [
+			i - cpt to: self grid width - 1 - cpt do: [ :j |
+			self switchColumn: j withColumn: j + 1 ].
+			cpt := cpt + 1 ] ]

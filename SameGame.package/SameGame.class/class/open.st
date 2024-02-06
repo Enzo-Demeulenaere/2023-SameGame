@@ -4,7 +4,7 @@ open
 	<script>
 	| board graphicBoard space |
 	board := Board new game: Game new.
-	board generateGridX: 20 y: 20.
+	board generateGridWidth: 20 height: 20.
 	graphicBoard := SGBoardElement new.
 	graphicBoard grid: board grid.
 	graphicBoard sameGameBoard: board.
