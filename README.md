@@ -15,7 +15,7 @@ Metacello new
 ```
 Metacello new
     baseline: 'SameGame';
-    repository: 'github://Ducasse/2023-SameGame:main/src';
+    repository: 'github://Enzo-Demeulenaere/2023-SameGame:master/src';
     onConflictUseLoaded;
     load.
 ```
@@ -26,26 +26,26 @@ SameGameGraphic open
 
 ## Jouer au jeu
 
-Pour jouer, il suffit de taper ```SameGameGraphic open ``` dans un PlayGround.
+Pour jouer, il suffit de taper ```SameGame open ``` dans un PlayGround.
 
 Les règles du jeu sont simples :
 Il suffit de clicker sur les cases de couleur (rouge, bleu, verte, jaune) qui sont adjacentes à au moins une case de la même couleur. Celles-ci disparaîtront, la grille de jeu se réorganisera (décalage de bas en haut puis de droite à gauche), et le but est de n'avoir plus aucune case à la fin.
 
 ## Le code du jeu
 
-Le code se trouvera dans les packages suivants :
-- SameGame (coeur du jeu)
-- SameGame-Graphic (partie graphique du jeu)
-- SameGame-Graphic-Tests (tests de la partie graphique du jeu)
-- SameGame-Tests (tests du coeur du jeu)
+Le code se trouvera dans le package "SameGame" avec les différentes parties rangées dans les tags suivants:
+- Model (coeur du jeu)
+- Model-Tests (tests du coeur du jeu)
+- UI (partie graphique du jeu)
+- UI-Tests (tests de la partie graphique du jeu)
 
 # Implementation
 
 ## Les classes
 
-Côté coeur du jeu, nous avons une classe Board (représentant le board du jeu) qui hérite notamment de MygBoard pour hériter de son API. Une AbstractCase (représentant une case) qui hérite de MygAbtractBox pour son API également, et ensuite des cases représentant chaque couleur qui vont hériter d'AbstractCase car chaque couleur pourrait avoir un comportement différent (rapporte plus ou moins de points, possède bonus etc...). Nous avons ensuite la classe Game qui représente une partie.
+Côté coeur du jeu, nous avons une classe Board (représentant le board du jeu) qui hérite notamment de MygBoard pour hériter de son API. Une NullCase (représentant une case) qui hérite de MygAbtractBox pour son API également, et ensuite des cases représentant chaque couleur qui vont hériter de NullCase car chaque couleur pourrait avoir un comportement différent (rapporte plus ou moins de points, possède bonus etc...). Nous avons ensuite la classe Game qui représente une partie.
 
-Côté partie graphique, nous avons les classes SGBoardElement (représentant le board graphique) et SGCaseElement (représentant la case graphique) qui héritent de BlElement. La classe principale SameGameGraphic sera utilisée notamment pour sa méthode de classe "open" qui gère la création d'une partie (en associant coeur du jeu et partie graphique).
+Côté partie graphique, nous avons les classes SGBoardElement (représentant le board graphique) et SGCaseElement (représentant la case graphique) qui héritent de BlElement
 
 C'est l'organisation qui nous paraissait la plus naturelle, car on retrouve pour chaque classe un élément principal du jeu (à savoir une partie, un board et des cases). La partie graphique suit la même organisation pour faciliter l'association coeur du jeu/partie graphique.
 
