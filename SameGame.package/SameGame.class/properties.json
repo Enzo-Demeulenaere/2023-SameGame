@@ -1,11 +1,11 @@
 {
 	"commentStamp" : "",
 	"super" : "Object",
-	"category" : "SameGame-UI",
+	"category" : "SameGame-Model",
 	"classinstvars" : [ ],
 	"pools" : [ ],
 	"classvars" : [ ],
 	"instvars" : [ ],
-	"name" : "SameGameGraphic",
+	"name" : "SameGame",
 	"type" : "normal"
 }
