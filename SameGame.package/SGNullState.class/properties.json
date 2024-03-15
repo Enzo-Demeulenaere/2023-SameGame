@@ -1,0 +1,13 @@
+{
+	"commentStamp" : "MaximeDSM 11/24/2023 11:21",
+	"super" : "Object",
+	"category" : "SameGame-Model",
+	"classinstvars" : [
+		"uniqueInstance"
+	],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SGNullState",
+	"type" : "normal"
+}

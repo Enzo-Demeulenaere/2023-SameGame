@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "SGNullState",
+	"category" : "SameGame-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SGRedState",
+	"type" : "normal"
+}

@@ -9,23 +9,23 @@ testReorganiseBoard
  | N |            | N |
  | B |            | N | "
 
-	game := Game new.
-	firstBoard := Board new game: game.
+	game := SGGame new.
+	firstBoard := SGBoard new game: game.
 	firstBoard := firstBoard configureGrid:
 		              ((CTNewArray2D width: 1 height: 5)
-			               at: 1 @ 1 put: (BlueCase new
+			               at: 1 @ 1 put: (SGBlueState new
 					                grid: firstBoard;
 					                position: 1 @ 1);
-			               at: 1 @ 2 put: (NullCase new
+			               at: 1 @ 2 put: (SGNullState new
 				                grid: firstBoard;
 				                position: 1 @ 2);
-			               at: 1 @ 3 put: (YellowCase new
+			               at: 1 @ 3 put: (SGYellowState new
 				                grid: firstBoard;
 				                position: 1 @ 3);
-			               at: 1 @ 4 put: (NullCase new
+			               at: 1 @ 4 put: (SGNullState new
 				                grid: firstBoard;
 				                position: 1 @ 4);
-			               at: 1 @ 5 put: (GreenCase new
+			               at: 1 @ 5 put: (SGGreenState new
 				                grid: firstBoard;
 				                position: 1 @ 5);
 			               yourself).

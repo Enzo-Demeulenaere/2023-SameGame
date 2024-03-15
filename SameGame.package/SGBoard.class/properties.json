@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "MygBoard",
+	"category" : "SameGame-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"game",
+		"hitList"
+	],
+	"name" : "SGBoard",
+	"type" : "normal"
+}

@@ -3,7 +3,7 @@ testDrawNullCase
 
 	| case |
 	self skip.
-	case := SGCaseElement new.
+	case := SGBoxElement new.
 	case drawNullCase.
 
 	self

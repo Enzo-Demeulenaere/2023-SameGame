@@ -1,4 +1,0 @@
-accessing
-y
-
-	^ position y
