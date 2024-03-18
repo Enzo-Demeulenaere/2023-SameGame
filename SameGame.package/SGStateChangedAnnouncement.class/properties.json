@@ -1,0 +1,11 @@
+{
+	"commentStamp" : "",
+	"super" : "Announcement",
+	"category" : "SameGame-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [ ],
+	"name" : "SGStateChangedAnnouncement",
+	"type" : "normal"
+}

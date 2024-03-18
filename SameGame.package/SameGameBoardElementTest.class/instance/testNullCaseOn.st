@@ -4,17 +4,17 @@ testNullCaseOn
 	| firstBoard game graphicBoard |
 	"| B G |   =>       | N G |
  | G R |            | G R |       "
-	game := Game new.
-	firstBoard := Board new game: game.
+	game := SGGame new.
+	firstBoard := SGBoard new game: game.
 	firstBoard := firstBoard configureGrid:
 		              ((CTNewArray2D width: 2 height: 2)
-			               at: 1 @ 1 put: (BlueCase new
+			               at: 1 @ 1 put: (SGBlueState new
 					             );
-			               at: 1 @ 2 put: (GreenCase new
+			               at: 1 @ 2 put: (SGGreenState new
 				                );
-			               at: 2 @ 1 put: (GreenCase new
+			               at: 2 @ 1 put: (SGGreenState new
 				              );
-			               at: 2 @ 2 put: (RedCase new
+			               at: 2 @ 2 put: (SGRedState new
 				                );
 			               yourself).
 	graphicBoard := SGBoardElement new.
@@ -23,7 +23,7 @@ testNullCaseOn
 
 	firstBoard drawer: graphicBoard.
 
-	firstBoard nullCaseOnx: 1 y: 1.
+	firstBoard nullBoxOnx: 1 y: 1.
 
 	self assert: (firstBoard grid at: 1 @ 1) literal equals: 'N'.
 	self assert: (firstBoard grid at: 1 @ 2) literal equals: 'G'.

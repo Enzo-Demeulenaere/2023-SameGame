@@ -2,14 +2,14 @@ tests
 testGrid
 
 	| game firstBoard graphicBoard |
-	game := Game new.
-	firstBoard := Board new game: game.
+	game := SGGame new.
+	firstBoard := SGBoard new game: game.
 	firstBoard := firstBoard configureGrid:
 		              ((CTNewArray2D width: 2 height: 2)
-			               at: 1 @ 1 put: BlueCase new;
-			               at: 1 @ 2 put: GreenCase new;
-			               at: 2 @ 1 put: NullCase new;
-			               at: 2 @ 2 put: RedCase new;
+			               at: 1 @ 1 put: SGBlueState new;
+			               at: 1 @ 2 put: SGGreenState new;
+			               at: 2 @ 1 put: SGNullState new;
+			               at: 2 @ 2 put: SGRedState new;
 			               yourself).
 	graphicBoard := SGBoardElement new.
 	graphicBoard grid: firstBoard grid.
@@ -32,7 +32,7 @@ testGrid
 		(graphicBoard grid at: 2 @ 2) background paint color
 		equals: Color lightRed.
 
-	firstBoard grid at: 1 @ 1 put: YellowCase new.
+	firstBoard grid at: 1 @ 1 put: SGYellowState new.
 	graphicBoard grid: firstBoard grid.
 
 	self

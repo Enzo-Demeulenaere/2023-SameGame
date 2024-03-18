@@ -5,12 +5,11 @@ grid: aSameGameBoardGrid
 		        width: aSameGameBoardGrid width
 		        height: aSameGameBoardGrid height
 		        tabulate: [ :col :row |
-			        | elt |
-			        elt := SGCaseElement new background:
-				        (aSameGameBoardGrid at: col @ row)
-					        backgroundRepresentation;
-			        gridPosition: col @ row;
-			        board: self.
+			        | elt box |
+					  box := (aSameGameBoardGrid at: col @ row).
+			        elt := (SGBoxElement createWithBox: box)
+				               gridPosition: col @ row;
+				               board: self.
 			        self addChild: elt.
 			        elt ].
 

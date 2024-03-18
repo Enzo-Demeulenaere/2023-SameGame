@@ -3,7 +3,7 @@ testDrawYellowCase
 
 	| case |
 	self skip.
-	case := SGCaseElement new.
+	case := SGBoxElement new.
 	case drawYellowCase.
 
 	self

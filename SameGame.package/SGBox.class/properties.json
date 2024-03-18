@@ -1,0 +1,14 @@
+{
+	"commentStamp" : "",
+	"super" : "MygAbstractBox",
+	"category" : "SameGame-Model",
+	"classinstvars" : [ ],
+	"pools" : [ ],
+	"classvars" : [ ],
+	"instvars" : [
+		"state",
+		"announcer"
+	],
+	"name" : "SGBox",
+	"type" : "normal"
+}
