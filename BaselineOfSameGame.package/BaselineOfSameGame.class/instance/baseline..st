@@ -4,7 +4,7 @@ baseline: spec
 
 	spec
 		baseline: 'Myg'
-		with: [ spec repository: 'github://Ducasse/Myg:v1.0.1/src' ].
+		with: [ spec repository: 'github://Ducasse/Myg:v1.0.2/src' ].
 
 	spec
 		package: 'SameGame' 
